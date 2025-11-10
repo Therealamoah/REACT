@@ -1,4 +1,5 @@
 import React from 'react'
+import image from '../assets/1fashion.jpg'
 
 export const Coza = () => {
   return (
@@ -10,7 +11,7 @@ export const Coza = () => {
             <div className='hidden md:block lg:block'>
                 <div className='flex justify-between items-center'>
                     {/* colorib */}
-                    <div className='p-3 flex items-center'>
+                    <div className='p-3 flex items-center '>
                         <p className='text-4xl'>Colorlib</p>
                         <p className='pl-5 text-md flex bg-green-900 text-gray-400'>+ COZA STORE</p>
                     </div>
@@ -69,6 +70,28 @@ export const Coza = () => {
             </div>
         </div>
       </section>
+
+      {/* Men collections */}
+      {/* Bigger Screen */}
+      <section>
+        <div className='relative'>
+            <img src={image} alt="Fashion Image" className='bg-cover bg-center w-full lg:h-140' />
+        </div>
+        <div className='hidden md:block lg:block '>
+            <h1 className='absolute top-40 m-10 text-white text-4xl font-bold'>MEN COLLECTION</h1>
+            <p className='absolute top-52 m-10 text-white text-3xl font-bold'>NEW ARRIVAL</p>
+            <div className='pt-15'>
+                <button className='absolute top-76 ml-8 mb-9 w-10 h-9 bg-blue'>
+
+                </button>
+
+            </div>
+
+        </div>
+      </section>
+      
+
+         
       
     </>
   )
